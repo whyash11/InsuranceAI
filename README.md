@@ -68,7 +68,7 @@ Home Interface	Premium Calculator (with location)	Claim Lookup
 🔧 Shashwat Dash
 – Engineered the core logic and BaseTool setups for the Premium Calculator, Claims Lookup, and Quote + Advice tools, forming the functional core of the assistant.
 
-🎨 Yash Kapoor
+🔧 Yash Kapoor
 – Built the complete Streamlit UI, designed the user journey, and integrated the Mappls API to introduce location-based risk into the Premium Calculator.
 
 📄 License
