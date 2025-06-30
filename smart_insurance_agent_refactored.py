@@ -9,11 +9,11 @@ from langchain.prompts import PromptTemplate
 from langchain.memory import ConversationBufferMemory
 from langchain.agents import initialize_agent, Tool, AgentType
 from langchain.tools import BaseTool
+import streamlit as st
 
-# === Load API Key ===
-load_dotenv()
-openai_key = "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"
-mapmyindia_key = "bbd5e7f6ea983f19d26288ca5d0ac71b"
+openai_key = st.secrets["OPENAI_API_KEY"]
+mapmyindia_key = st.secrets["MAPMYINDIA_API_KEY"]
+
 assert openai_key is not None, "Missing OpenAI API key. Add it to your .env file."
 
 llm = ChatOpenAI(temperature=0.2, openai_api_key=openai_key)
@@ -55,7 +55,7 @@ class PremiumCalculatorTool(BaseTool):
 
             # Step 3: Adjust risk based on city
             risk_factor = 1.0
-            high_risk_cities = ["Delhi", "Mumbai", "Gurgaon"]
+            high_risk_cities = ["Delhi", "Mumbai", "Gurgaon","Bangalore", "Chennai", "Kolkata", "Hyderabad", "Pune", "Ahmedabad", "Jaipur","New Delhi", "Noida", "Ghaziabad", "Faridabad", "Lucknow", "Kanpur", "Nagpur", "Indore", "Bhopal", "Coimbatore"]
             if location_city in high_risk_cities:
                 risk_factor = 1.2
 
