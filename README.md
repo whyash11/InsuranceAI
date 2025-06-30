@@ -23,6 +23,8 @@ This project connects with Mappls (formerly MapMyIndia) to automatically determi
 🗺️ Location detection is automatic — no input required by the user.
 
 🛠️ Tech Stack
+Python
+
 Frontend/UI: Streamlit
 
 AI Backend: LangChain + OpenAI ChatGPT
