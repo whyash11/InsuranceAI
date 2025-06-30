@@ -9,9 +9,10 @@ from langchain.prompts import PromptTemplate
 from langchain.memory import ConversationBufferMemory
 from langchain.agents import initialize_agent, Tool, AgentType
 from langchain.tools import BaseTool
+import streamlit as st
 
-openai_key = "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"
-mapmyindia_key = "bbd5e7f6ea983f19d26288ca5d0ac71b"
+openai_key = st.secrets("OPENAI_API_KEY")
+mapmyindia_key = st.secrets("MAPMYINDIA_API_KEY")
 
 assert openai_key is not None, "Missing OpenAI API key. Add it to your .env file."
 
