@@ -10,7 +10,7 @@ from langchain.memory import ConversationBufferMemory
 from langchain.agents import initialize_agent, Tool, AgentType
 from langchain.tools import BaseTool
 
-openai_key = "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"
+openai_key = "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"
 mapmyindia_key = "bbd5e7f6ea983f19d26288ca5d0ac71b"
 
 assert openai_key is not None, "Missing OpenAI API key. Add it to your .env file."
