@@ -11,8 +11,8 @@ from langchain.agents import initialize_agent, Tool, AgentType
 from langchain.tools import BaseTool
 import streamlit as st
 
-openai_key = st.secrets("OPENAI_API_KEY")
-mapmyindia_key = st.secrets("MAPMYINDIA_API_KEY")
+openai_key = st.secrets["OPENAI_API_KEY"]
+mapmyindia_key = st.secrets["MAPMYINDIA_API_KEY"]
 
 assert openai_key is not None, "Missing OpenAI API key. Add it to your .env file."
 
